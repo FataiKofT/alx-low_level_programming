@@ -11,27 +11,34 @@ int main(void)
 
 int a;
 int b;
-int c = 1;
+int c;
+int d = 1;
 
 while (a <= 9)
 {
 while (b <= 9)
 {
-if (a < b)
+while (c <= 9)
 {
-if (c == 0)
+if (a < b && b < c)
+{
+if (d == 0)
 {
 putchar(',');
 putchar(32);
 }
 c = 0;
-putchar ((a) + '0');
-putchar ((b) + '0');
+putchar((a) + '0');
+putchar((b) + '0');
+putchar((c) +'0');
 }
-b++;
+++c;
 }
-a++;
-b++;
+++b;
+c = 0;
+}
+++a;
+b = 0;
 }
 putchar(10);
 return (0);
