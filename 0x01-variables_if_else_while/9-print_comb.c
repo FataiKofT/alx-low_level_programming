@@ -18,7 +18,7 @@ if (a != '9')
 putchar(',');
 putchar(' ');
 }
-a++
+a++;
 }
 putchar('\n');
 return (0);
