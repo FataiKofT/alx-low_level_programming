@@ -1,16 +1,13 @@
-#include <stdio.h>
-#include <string.h>
+#include "main.h"
 
 /**
  * main - entry point
  * Description - function to print _putchar
- * Return: 0
+ * Return: nothing
  */
 
 int main(void)
 {
-char c = "\_putchar"
-putchar(c);
-putchar("\n");
-return (0);
+char string[] = "_putchar"
+putchar("%s\n", string);
 }
